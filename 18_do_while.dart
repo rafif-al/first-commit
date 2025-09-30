@@ -44,5 +44,5 @@ void main(List<String> args) {
   do {
     print('ini angka kebalik ke $kebalik');
     kebalik--;
-  } while (kebalik >= 20);
+  } while (kebalik >= 0);
 }
