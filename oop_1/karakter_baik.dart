@@ -1,17 +1,20 @@
-class Karakter {
-  //attribute
-  String name = 'Hero';
-  int health = 100;
-  int power = 50;
+class HeroCharacter {
+  // Atribut
+  String name = 'Arka Sang Pahlawan';
+  int health = 120;
+  int power = 60;
 
-  //method
+  // Method: menyerang
   void attack() {
-    print('$name menyerang dengan power $power');
+    print('$name menyerang dengan kekuatan sebesar $power!');
   }
 
-
+  // Method: memulihkan diri
 
   void heal() {
-    print('$name mendapatkan health $health');
+    print('$name memulihkan diri dan mendapatkan kembali 30 poin kesehatan!');
+    health += 30;
+    if (health > 120) health = 120;
+    print('Kesehatan sekarang: $health');
   }
 }
