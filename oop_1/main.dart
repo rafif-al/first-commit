@@ -1,6 +1,7 @@
-import 'animal.dart';
-import 'plants.dart';
+import '27_animal.dart';
+import '26_plants.dart';
 import 'karakter_baik.dart';
+import '29_constructor.dart';
 import 'karakter_jahat.dart';
 
 
@@ -69,5 +70,18 @@ void main(List<String> args) {
   }
 
   print('\n=== AKHIR BAB 1 ===');
-  
+
+  //var hewan = Hewan("Ucup Guerero", "Hitam" , 5.4);
+  //print(hewan.name);
+  //print(hewan.color);
+  //print(hewan.wheigth);
+
+  var hewan = Hewan("Ucup Guerero", "Hitam" , 5.4)
+  ..name = "Mbul"
+  ..color = "White";
+
+  print(hewan.name);
+  print(hewan.color);
+  print(hewan.wheigth);
+
 }
